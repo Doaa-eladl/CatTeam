@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+    margin: 0;
+}
+
+.main-content{
+    background: url(background.jpg);
+}
+
+.main-title{
+    margin-top: 109px;
+    margin-left: 46px;
+    font-size: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    color: #454545;
+    font-family: 'Cairo', sans-serif;
+}
+
+.cat{
+    margin-left: 46px;
+    margin-top: 23px;
+    border-left: black solid 1.5px ;
+    margin-bottom: 3rem;
+}
+
+.about-cat{
+    padding-left: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #c2341c;
+    margin: 0;
+    width: 30%;
+}
+
+.cat-info{
+    padding-left: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #454545;
+    margin: 0;
+    width: 30%;
+}
+
+.highlited-letter1{
+    color: #c2341c;
+    font-weight: bolder;
+}
+
+.highlited-letter23{
+    color: #c2341c;
+}
+
+.aside-content{
+    background: url(logo.jpg) center;
+    height: 100%;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nav-links{
+    margin-bottom: 32px;
+}
+
+.links{
+    list-style: none;
+}
+
+.socialmedia-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.link{
+    display: inline-block;
+}
+
+@media(max-width:40rem){
+
+    /*body{
+        max-width: 100rem;
+    }*/
+
+    .main-title{  
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 2rem;
+        width: 100%;
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+
+    .cat{
+        margin-left: 20px;
+        margin-top: 15px;
+        border: none;
+    }
+
+    .about-cat{
+        font-size: 1.1rem;
+    }
+
+    .cat-info{
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    .aside-content{
+        background: #c2341c;
+        background-image: url(mob-logo.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        align-items: flex-start;
+    }
+    
+    .socialmedia-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .link{
+        display:block;
+    }
+
+    .nav-links{
+        margin-top: 120px;
+        margin-right: 30px;
+    }
+}
